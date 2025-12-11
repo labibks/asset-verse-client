@@ -1,4 +1,3 @@
-// src/layouts/HRLayout.jsx
 import React, { useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router";
 import TopRequestedBarChart from "../Pages/hrDashboard/TopRequestedBarChart";
@@ -92,7 +91,6 @@ const HRLayout = () => {
         </div>
 
         <main className="p-4 flex-1">
-          {/* ➤ When route is /hr → show default dashboard with charts */}
           {isDashboard ? (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <TopRequestedBarChart />

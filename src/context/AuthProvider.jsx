@@ -1,4 +1,3 @@
-// src/context/AuthProvider.jsx
 import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
@@ -13,9 +12,7 @@ const AuthProvider = ({ children }) => {
   const [userRole, setUserRole] = useState(null); // "employee" or "hr"
   const [loading, setLoading] = useState(true);
 
-  // =====================
   // Register User (Employee / HR)
-  // =====================
   const registerUser = async (email, password, name, role, extra = {}) => {
     setLoading(true);
     try {
@@ -37,9 +34,7 @@ const AuthProvider = ({ children }) => {
     }
   };
 
-  // =====================
   // Login User
-  // =====================
   const loginUser = async (email, password) => {
     setLoading(true);
     try {
@@ -62,9 +57,7 @@ const AuthProvider = ({ children }) => {
     }
   };
 
-  // =====================
   // Logout
-  // =====================
   const logoutUser = () => {
     localStorage.removeItem("token");
     setUser(null);

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { NavLink, Outlet, useNavigate } from "react-router"; // useNavigate import kora lagbe
-import { AiOutlineHome } from "react-icons/ai"; // react-icons theke home icon
+import { NavLink, Outlet, useNavigate } from "react-router"; 
+import { AiOutlineHome } from "react-icons/ai"; 
 
 const EmployeeLayout = () => {
   const [open, setOpen] = useState(false);
-  const navigate = useNavigate(); // navigate hook
+  const navigate = useNavigate(); 
 
   const activeClass =
     "bg-blue-200 text-blue-700 font-semibold rounded p-2 block";
@@ -24,7 +24,7 @@ const EmployeeLayout = () => {
           </h3>
           {/* Home Icon */}
           <button
-            onClick={() => navigate("/")} // home page
+            onClick={() => navigate("/")} 
             className="text-indigo-500 hover:text-indigo-700 text-2xl"
             title="Go to Home"
           >
