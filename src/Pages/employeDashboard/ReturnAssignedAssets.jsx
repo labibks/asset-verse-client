@@ -50,7 +50,7 @@ const ReturnAssignedAssetsDummy = () => {
       );
       setReturningId(null);
       alert("Asset returned successfully!");
-    }, 800); // simulate API call delay
+    }, 800); 
   };
 
   if (loading) return <Loading></Loading>;

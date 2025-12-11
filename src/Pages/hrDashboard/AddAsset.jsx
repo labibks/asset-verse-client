@@ -24,7 +24,6 @@ const AddAsset = () => {
       return;
     }
 
-    // 1️⃣ Upload image to imgbb
     const imgBB_API_KEY = "8c7d9637da2bc76621539d1f1045f05e";
     const formData = new FormData();
     formData.append("image", imageFile);
@@ -43,7 +42,6 @@ const AddAsset = () => {
       return;
     }
 
-    // 2️⃣ Prepare asset object
     const newAsset = {
       productName: name,
       productType: type,
