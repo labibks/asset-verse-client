@@ -1,4 +1,3 @@
-// src/pages/hr/ProfileHr.jsx
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../context/AuthProvider";
 import { FiHome } from "react-icons/fi";
@@ -19,7 +18,6 @@ const ProfileHr = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSave = () => {
-    // এখানে Firebase updateProfile বা backend API call করতে পারো
     console.log("Updated data:", formData);
     setEditMode(false);
   };
