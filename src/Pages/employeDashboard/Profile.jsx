@@ -12,7 +12,7 @@ const Profile = () => {
     email: user?.email || "",
   });
   const [photo, setPhoto] = useState(user?.photoURL || "");
-  const [companies] = useState(["Company A", "Company B"]); // dummy companies
+  const [companies] = useState(["Company A", "Company B"]); 
   const navigate = useNavigate();
 
   const handleChange = (e) =>
