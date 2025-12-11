@@ -7,12 +7,10 @@ const NotFound = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-      {/* Big 404 Text */}
       <h1 className="text-9xl font-extrabold text-indigo-500 animate-bounce">
         404
       </h1>
 
-      {/* Not Found Message */}
       <h2 className="text-3xl font-semibold mt-4 text-gray-700">
         Oops! Page Not Found
       </h2>
