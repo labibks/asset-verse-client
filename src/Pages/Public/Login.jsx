@@ -1,4 +1,3 @@
-// src/pages/public/Login.jsx
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -14,19 +13,16 @@ const Login = () => {
     setError("");
 
     try {
-                                  const apiBase = import.meta.env.VITE_API_URL;
+      const apiBase = import.meta.env.VITE_API_URL;
 
-      const response = await fetch(
-        `${apiBase}/auth/login`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            email: formData.email,
-            password: formData.password,
-          }),
-        }
-      );
+      const response = await fetch(`${apiBase}/auth/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: formData.email,
+          password: formData.password,
+        }),
+      });
 
       const data = await response.json();
       console.log("Login response:", data);
@@ -35,11 +31,9 @@ const Login = () => {
         throw new Error(data.error || "Login failed");
       }
 
-      // Save token & role
       localStorage.setItem("token", data.token);
       localStorage.setItem("userRole", data.user.role);
 
-      // Redirect manually without DOM library
       if (data.user.role === "employee") {
         window.location.href = "/dashboard/employee";
       } else if (data.user.role === "hr") {
