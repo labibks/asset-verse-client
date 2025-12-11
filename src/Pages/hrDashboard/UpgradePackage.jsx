@@ -1,4 +1,3 @@
-// src/pages/hr/UpgradePackage.jsx
 import React, { useEffect, useState, useContext } from "react";
 import { motion } from "framer-motion";
 import Swal from "sweetalert2";
@@ -22,11 +21,8 @@ const UpgradePackage = () => {
     import.meta.env.VITE_API_BASE ||
     "https://asset-verse-server-theta.vercel.app";
 
-  // -----------------------------
   // Helper: get auth headers
-  // -----------------------------
   async function getAuthHeader() {
-    // If you have backend token in localStorage
     const backendToken = localStorage.getItem("backend_token");
     if (backendToken) return { Authorization: `Bearer ${backendToken}` };
 
@@ -42,9 +38,7 @@ const UpgradePackage = () => {
     return {};
   }
 
-  // -----------------------------
   // Fetch packages
-  // -----------------------------
   const fetchPackages = async () => {
     try {
       const headers = await getAuthHeader();
@@ -58,9 +52,7 @@ const UpgradePackage = () => {
     }
   };
 
-  // -----------------------------
   // Fetch payment history
-  // -----------------------------
   const fetchPayments = async () => {
     try {
       const headers = await getAuthHeader();
@@ -80,9 +72,7 @@ const UpgradePackage = () => {
     }
   }, [user]);
 
-  // -----------------------------
   // Handle package selection
-  // -----------------------------
   const handleChoose = (pkg) => {
     setSelectedPkg(pkg);
     Swal.fire({
@@ -97,9 +87,7 @@ const UpgradePackage = () => {
     });
   };
 
-  // -----------------------------
   // Create checkout session
-  // -----------------------------
   const createCheckoutSession = async (packageId) => {
     setLoading(true);
     try {
