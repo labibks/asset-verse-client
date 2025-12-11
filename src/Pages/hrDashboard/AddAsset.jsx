@@ -52,7 +52,6 @@ const AddAsset = () => {
       dateAdded: new Date(),
     };
 
-    // 3️⃣ Send to backend
     try {
                         const apiBase = import.meta.env.VITE_API_URL;
 
@@ -69,7 +68,6 @@ const AddAsset = () => {
       if (res.data.success) {
         Swal.fire("Success!", "Asset added successfully!", "success");
         form.reset();
-        // 🔥 Navigate to AssetList correctly
         navigate("/dashboard/hr/asset-list", { replace: true });
       } else {
         Swal.fire("Error", res.data.error || "Failed to add asset!", "error");

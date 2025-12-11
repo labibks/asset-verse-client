@@ -13,16 +13,13 @@ const AllRequests = () => {
   useEffect(() => {
     const fetchHRRequests = async () => {
       try {
-                                const apiBase = import.meta.env.VITE_API_URL;
+        const apiBase = import.meta.env.VITE_API_URL;
 
-        const res = await axios.get(
-          `${apiBase}/requests/hr`,
-          {
-            headers: {
-              Authorization: `Bearer ${localStorage.getItem("token")}`,
-            },
-          }
-        );
+        const res = await axios.get(`${apiBase}/requests/hr`, {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        });
         setRequests(res.data);
       } catch (err) {
         console.error("Failed to load HR requests:", err);
@@ -46,8 +43,7 @@ const AllRequests = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-                                          const apiBase = import.meta.env
-                                            .VITE_API_URL;
+          const apiBase = import.meta.env.VITE_API_URL;
 
           const res = await axios.patch(
             `${apiBase}/requests/${id}/${backendAction}`,
