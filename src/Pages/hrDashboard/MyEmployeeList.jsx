@@ -8,7 +8,7 @@ const MyEmployeeList = () => {
   const [employees, setEmployees] = useState([]);
   const [maxEmployees, setMaxEmployees] = useState(0);
 
-  const token = localStorage.getItem("token"); // HR token
+  const token = localStorage.getItem("token"); 
 
   // FETCH EMPLOYEES FROM BACKEND
   const fetchEmployees = async () => {
@@ -159,7 +159,6 @@ const MyEmployeeList = () => {
               </div>
             </div>
 
-            {/* REMOVE BUTTON */}
             <div className="mt-5 flex justify-center">
               <button
                 onClick={() => handleRemove(emp.employeeEmail)}
@@ -173,14 +172,12 @@ const MyEmployeeList = () => {
         ))}
       </div>
 
-      {/* EMPTY STATE */}
       {employees.length === 0 && (
         <div className="text-center mt-10 text-gray-500 text-xl">
           No employees found.
         </div>
       )}
 
-      {/* HOME BUTTON */}
       <div className="flex justify-center mt-10">
         <button
           onClick={() => navigate("/")}
