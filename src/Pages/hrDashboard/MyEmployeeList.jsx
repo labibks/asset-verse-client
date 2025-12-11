@@ -10,9 +10,7 @@ const MyEmployeeList = () => {
 
   const token = localStorage.getItem("token"); // HR token
 
-  // ---------------------------
   // FETCH EMPLOYEES FROM BACKEND
-  // ---------------------------
   const fetchEmployees = async () => {
     try {
                   const apiBase = import.meta.env.VITE_API_URL;

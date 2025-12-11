@@ -24,7 +24,6 @@ const HRWelcome = () => {
 
         {/* Quick Actions */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-          {/* Card 1 */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="p-6 rounded-xl shadow-lg bg-gradient-to-br from-indigo-500 to-blue-500 text-white cursor-pointer"
@@ -44,7 +43,6 @@ const HRWelcome = () => {
             </Link>
           </motion.div>
 
-          {/* Card 2 */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="p-6 rounded-xl shadow-lg bg-gradient-to-br from-green-500 to-emerald-500 text-white cursor-pointer"
@@ -64,7 +62,6 @@ const HRWelcome = () => {
             </Link>
           </motion.div>
 
-          {/* Card 3 */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="p-6 rounded-xl shadow-lg bg-gradient-to-br from-purple-500 to-pink-500 text-white cursor-pointer"
@@ -85,7 +82,6 @@ const HRWelcome = () => {
           </motion.div>
         </div>
 
-        {/* Footer Small Badge */}
         <div className="mt-10 flex justify-center items-center gap-2 text-indigo-600 font-semibold">
           <Star size={18} />
           <span>Your HR space is fully optimized</span>
