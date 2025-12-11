@@ -1,4 +1,3 @@
-// src/components/hr/EditAssetModal.jsx
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 
@@ -41,7 +40,7 @@ const EditAssetModal = ({ asset, onClose, onUpdated, token }) => {
       if (!res.ok) throw new Error("Update failed");
 
       toast.success("Asset updated successfully");
-      onUpdated(); // refresh parent
+      onUpdated(); 
       onClose();
     } catch (err) {
       console.error("Edit asset error:", err);
