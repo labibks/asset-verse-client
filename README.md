@@ -51,5 +51,5 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/asset-verse-server.git
+git clone https://github.com/labibks/asset-verse-client.git
 cd asset-verse-server
