@@ -1,4 +1,3 @@
-// src/pages/public/RegisterHR.jsx
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -46,11 +45,9 @@ const RegisterHR = () => {
         throw new Error(data.error || "Registration failed");
       }
 
-      // Save token & role
       localStorage.setItem("token", data.token);
       localStorage.setItem("userRole", data.user.role);
 
-      // Redirect based on role
       if (data.user.role === "hr") window.location.href = "/dashboard/hr";
       else if (data.user.role === "employee")
         window.location.href = "/dashboard/employee";
