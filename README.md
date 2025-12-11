@@ -1,16 +1,55 @@
-# React + Vite
+# AssetVerse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Project Name:** AssetVerse  
+**Purpose:** Corporate Asset Management System
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live URL
+[Your Live App URL Here](https://assetverse-client.web.app)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Key Features
+- HR Dashboard with asset analytics
+  - Top Requested Assets (Bar Chart)
+  - Returnable vs Non-Returnable Assets (Pie Chart)
+- Asset Management
+  - Add, Edit, Delete Assets
+  - View Asset List with Pagination
+- Employee Management
+  - View employees and their assigned assets
+- Requests Management
+  - View, Approve, Return asset requests
+- Payment Integration
+  - Upgrade Packages using Stripe Checkout
+  - Payment history tracking
+- Responsive UI for desktop and mobile
+- User Authentication (Firebase)
+  - HR login / Employee login
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ npm Packages Used
+- **React**: Frontend library  
+- **React Router**: SPA routing  
+- **Framer Motion**: Animations  
+- **Axios**: HTTP requests  
+- **Firebase**: Authentication & Hosting  
+- **Stripe**: Payment processing  
+- **Recharts**: Analytics charts  
+- **SweetAlert2**: Alerts and modals  
+- **DaisyUI / Tailwind CSS**: UI styling  
+- **Express**: Backend server  
+- **MongoDB**: Database  
+- **jsonwebtoken**: Auth token handling  
+- **cors**: Cross-origin requests  
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/asset-verse-server.git
+cd asset-verse-server
