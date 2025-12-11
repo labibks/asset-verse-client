@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import React, { useState, useContext } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { AuthContext } from "../context/AuthProvider";

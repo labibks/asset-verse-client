@@ -12,20 +12,17 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-200 mt-10">
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* 1️⃣ Company Info */}
         <div>
           <h2 className="text-xl font-bold mb-4">AssetVerse</h2>
           <p className="text-sm">© 2025 AssetVerse. All rights reserved.</p>
         </div>
 
-        {/* 2️⃣ Contact Info */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Contact</h3>
           <p className="text-sm">Email: support@assetverse.com</p>
           <p className="text-sm mt-1">Phone: +880 123 456 789</p>
         </div>
 
-        {/* 3️⃣ Quick Navigation */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2">
@@ -52,7 +49,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* 4️⃣ Social Media */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
           <div className="flex gap-4">
