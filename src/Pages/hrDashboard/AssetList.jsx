@@ -14,7 +14,6 @@ const AssetList = () => {
 
   const navigate = useNavigate();
 
-  // Fetch assets from backend
   const fetchAssets = async () => {
     setLoading(true);
     try {
@@ -32,7 +31,6 @@ const AssetList = () => {
 
       const data = await res.json();
 
-      // Safely handle backend response
       const safeArray = Array.isArray(data)
         ? data
         : Array.isArray(data.assets)

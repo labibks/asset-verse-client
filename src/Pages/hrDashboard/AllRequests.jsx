@@ -9,7 +9,6 @@ const AllRequests = () => {
   const [requests, setRequests] = useState([]);
   const navigate = useNavigate();
 
-  // ---------- FETCH ALL HR REQUESTS ----------
   useEffect(() => {
     const fetchHRRequests = async () => {
       try {
@@ -71,7 +70,6 @@ const AllRequests = () => {
     });
   };
 
-  // ---------- FILTER REQUESTS ----------
   const filteredRequests = requests.filter(
     (req) =>
       req.requesterName.toLowerCase().includes(search.toLowerCase()) ||
@@ -161,7 +159,6 @@ const AllRequests = () => {
         )}
       </div>
 
-      {/* Home */}
       <div className="flex justify-center mt-auto">
         <button
           onClick={() => navigate("/")}
