@@ -1,4 +1,3 @@
-// src/pages/public/Home.jsx
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router";
@@ -81,7 +80,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 2️⃣ About Section */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-12 text-indigo-500">
@@ -131,7 +129,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 3️⃣ Packages Section */}
       <section className="py-24 bg-indigo-50">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-12 text-indigo-500">
@@ -167,7 +164,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 4️⃣ Features Showcase */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-12 text-indigo-500">
@@ -214,7 +210,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 5️⃣ Testimonials */}
       <section className="py-24 bg-indigo-50">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-12 text-indigo-500">
@@ -252,7 +247,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 6️⃣ How It Works */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-12 text-indigo-500">
@@ -297,7 +291,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 7️⃣ FAQ */}
       <section className="py-24 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-12 text-indigo-500">
@@ -354,7 +347,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 8️⃣ Contact CTA */}
       <section className="py-24 bg-indigo-600 text-white text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 ">
           Start Managing Your Assets Today
