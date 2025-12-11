@@ -1,4 +1,3 @@
-// src/pages/public/RegisterEmployee.jsx
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -20,23 +19,19 @@ const RegisterEmployee = () => {
     setError("");
 
     try {
-                                        const apiBase = import.meta.env
-                                          .VITE_API_URL;
+      const apiBase = import.meta.env.VITE_API_URL;
 
-      const response = await fetch(
-        `${apiBase}/auth/register`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            name: formData.name,
-            email: formData.email,
-            password: formData.password,
-            dateOfBirth: formData.dateOfBirth,
-            role: "employee",
-          }),
-        }
-      );
+      const response = await fetch(`${apiBase}/auth/register`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          password: formData.password,
+          dateOfBirth: formData.dateOfBirth,
+          role: "employee",
+        }),
+      });
 
       const data = await response.json();
 
@@ -44,11 +39,9 @@ const RegisterEmployee = () => {
         throw new Error(data.error || "Registration failed");
       }
 
-      // Save token & role
       localStorage.setItem("token", data.token);
       localStorage.setItem("userRole", data.user.role);
 
-      // Redirect based on role
       if (data.user.role === "employee")
         window.location.href = "/dashboard/employee";
       else if (data.user.role === "hr") window.location.href = "/dashboard/hr";
